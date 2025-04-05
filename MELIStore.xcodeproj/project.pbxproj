@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A3FA2D8A2DA1869600BB0EF8 /* SwiftDependencyInjector in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A33011182DA1676C00996EA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FA2D8A2DA1869600BB0EF8 /* SwiftDependencyInjector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = MELIStore;
 			packageProductDependencies = (
+				A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */,
 			);
 			productName = MELIStore;
 			productReference = A330110A2DA1676B00996EA3 /* MELI Store.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = A33011012DA1676B00996EA3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A3FA2D882DA1869600BB0EF8 /* XCRemoteSwiftPackageReference "swift-dependency-injector" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A330110B2DA1676B00996EA3 /* Products */;
 			projectDirPath = "";
@@ -417,7 +426,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MELIStore/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "MELI Andres Store";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -451,7 +460,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MELIStore/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "MELI Andres Store";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -618,7 +627,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MELIStore/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "MELI Andres Store";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -631,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.duque.app.MELIStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.duque.app.MELIStore.dev;
 				PRODUCT_NAME = "MELI Store Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
@@ -745,7 +754,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MELIStore/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "MELI Andres Store";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -758,7 +767,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.duque.app.MELIStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.duque.app.MELIStore.dev;
 				PRODUCT_NAME = "MELI Store Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
@@ -850,6 +859,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3FA2D882DA1869600BB0EF8 /* XCRemoteSwiftPackageReference "swift-dependency-injector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andresduke024/swift-dependency-injector.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3FA2D882DA1869600BB0EF8 /* XCRemoteSwiftPackageReference "swift-dependency-injector" */;
+			productName = SwiftDependencyInjector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A33011022DA1676B00996EA3 /* Project object */;
 }
