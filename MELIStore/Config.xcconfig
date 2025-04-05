@@ -1,1 +1,3 @@
-// The content of this file will be auto generated before every build using the .env related file content.
+/// The content of this file will be auto generated before every build using the .env related file content.
+///
+/// Be careful and not commit the generated code.
