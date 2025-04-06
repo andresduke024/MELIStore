@@ -10,6 +10,7 @@
 		A3FA2D8A2DA1869600BB0EF8 /* SwiftDependencyInjector in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */; };
 		A3FA2DF62DA1BC5B00BB0EF8 /* MELIStoreCore in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2DF52DA1BC5B00BB0EF8 /* MELIStoreCore */; };
 		A3FA2DF92DA1BCFD00BB0EF8 /* MELIStoreProducts in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2DF82DA1BCFD00BB0EF8 /* MELIStoreProducts */; };
+		A3FA2E062DA22F3900BB0EF8 /* MELIStoreDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2E052DA22F3900BB0EF8 /* MELIStoreDesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FA2E062DA22F3900BB0EF8 /* MELIStoreDesignSystem in Frameworks */,
 				A3FA2DF92DA1BCFD00BB0EF8 /* MELIStoreProducts in Frameworks */,
 				A3FA2DF62DA1BC5B00BB0EF8 /* MELIStoreCore in Frameworks */,
 				A3FA2D8A2DA1869600BB0EF8 /* SwiftDependencyInjector in Frameworks */,
@@ -137,6 +139,7 @@
 				A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */,
 				A3FA2DF52DA1BC5B00BB0EF8 /* MELIStoreCore */,
 				A3FA2DF82DA1BCFD00BB0EF8 /* MELIStoreProducts */,
+				A3FA2E052DA22F3900BB0EF8 /* MELIStoreDesignSystem */,
 			);
 			productName = MELIStore;
 			productReference = A330110A2DA1676B00996EA3 /* MELI Store.app */;
@@ -224,6 +227,7 @@
 				A3FA2D882DA1869600BB0EF8 /* XCRemoteSwiftPackageReference "swift-dependency-injector" */,
 				A3FA2DF42DA1BC5B00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreCore" */,
 				A3FA2DF72DA1BCFD00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreProducts" */,
+				A3FA2E042DA22F3900BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreDesignSystem" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A330110B2DA1676B00996EA3 /* Products */;
@@ -897,6 +901,14 @@
 				kind = branch;
 			};
 		};
+		A3FA2E042DA22F3900BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreDesignSystem" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andresduke024/MELIStoreDesignSystem";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -914,6 +926,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3FA2DF72DA1BCFD00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreProducts" */;
 			productName = MELIStoreProducts;
+		};
+		A3FA2E052DA22F3900BB0EF8 /* MELIStoreDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3FA2E042DA22F3900BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreDesignSystem" */;
+			productName = MELIStoreDesignSystem;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
