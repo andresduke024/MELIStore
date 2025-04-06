@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A3FA2D8A2DA1869600BB0EF8 /* SwiftDependencyInjector in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */; };
+		A3FA2DF62DA1BC5B00BB0EF8 /* MELIStoreCore in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2DF52DA1BC5B00BB0EF8 /* MELIStoreCore */; };
+		A3FA2DF92DA1BCFD00BB0EF8 /* MELIStoreProducts in Frameworks */ = {isa = PBXBuildFile; productRef = A3FA2DF82DA1BCFD00BB0EF8 /* MELIStoreProducts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FA2DF92DA1BCFD00BB0EF8 /* MELIStoreProducts in Frameworks */,
+				A3FA2DF62DA1BC5B00BB0EF8 /* MELIStoreCore in Frameworks */,
 				A3FA2D8A2DA1869600BB0EF8 /* SwiftDependencyInjector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +135,8 @@
 			name = MELIStore;
 			packageProductDependencies = (
 				A3FA2D892DA1869600BB0EF8 /* SwiftDependencyInjector */,
+				A3FA2DF52DA1BC5B00BB0EF8 /* MELIStoreCore */,
+				A3FA2DF82DA1BCFD00BB0EF8 /* MELIStoreProducts */,
 			);
 			productName = MELIStore;
 			productReference = A330110A2DA1676B00996EA3 /* MELI Store.app */;
@@ -216,6 +222,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A3FA2D882DA1869600BB0EF8 /* XCRemoteSwiftPackageReference "swift-dependency-injector" */,
+				A3FA2DF42DA1BC5B00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreCore" */,
+				A3FA2DF72DA1BCFD00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreProducts" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A330110B2DA1676B00996EA3 /* Products */;
@@ -352,6 +360,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -410,6 +419,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -433,7 +443,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +477,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,6 +621,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = DebugDev;
@@ -634,7 +645,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,6 +749,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = ReleaseDev;
@@ -761,7 +773,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -869,6 +881,22 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		A3FA2DF42DA1BC5B00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andresduke024/MELIStoreCore";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A3FA2DF72DA1BCFD00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreProducts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andresduke024/MELIStoreProducts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -876,6 +904,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3FA2D882DA1869600BB0EF8 /* XCRemoteSwiftPackageReference "swift-dependency-injector" */;
 			productName = SwiftDependencyInjector;
+		};
+		A3FA2DF52DA1BC5B00BB0EF8 /* MELIStoreCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3FA2DF42DA1BC5B00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreCore" */;
+			productName = MELIStoreCore;
+		};
+		A3FA2DF82DA1BCFD00BB0EF8 /* MELIStoreProducts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3FA2DF72DA1BCFD00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreProducts" */;
+			productName = MELIStoreProducts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import MELIStoreCore
 
 @main
 struct MELIStoreApp: App {
+    
+    init() {
+        ProjectBuilder.shared.build()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
