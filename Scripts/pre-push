@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "🚀 Ejecutando hook de pre-push..."
+
+echo "🔍 Ejecutando pre-commit sobre todos los archivos..."
+if ! pre-commit run --all-files; then
+  echo "❌ pre-commit ha fallado. Corrige los errores antes de hacer push."
+  exit 1
+fi
+
+echo "🧪 Ejecutando tests de Xcode..."
+
+# Configura aquí el nombre del workspace y scheme
+PROJECT="MELIStore.xcodeproj"
+SCHEME="MELIStoreDev"
+DESTINATION="platform=iOS Simulator,name=iPhone 16,OS=latest"
+
+xcodebuild \
+  -project "$PROJECT" \
+  -scheme "$SCHEME" \
+  -destination "$DESTINATION" \
+  clean test || {
+    echo "❌ Tests fallaron. Push cancelado."
+    exit 1
+}
+
+echo "✅ Todos los tests pasaron correctamente. Continuando con el push..."
