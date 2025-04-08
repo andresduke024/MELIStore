@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "8662904E-7085-412C-BAD6-5D5C08C87C18",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MELIStore.xcodeproj",
+        "identifier" : "A33011162DA1676C00996EA3",
+        "name" : "MELIStoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
