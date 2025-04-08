@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MELIStoreDev.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A33011092DA1676B00996EA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A33011162DA1676C00996EA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A33011202DA1676C00996EA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
