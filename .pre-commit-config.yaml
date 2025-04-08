@@ -1,6 +1,14 @@
 repos:
   - repo: local
     hooks:
+      - id: check-xcconfig
+        name: Bloquear archivos .xcconfig
+        entry: bash scripts/check-xcconfig.sh
+        language: system
+        types: [file]
+        
+  - repo: local
+    hooks:
       - id: swiftlint
         name: SwiftLint
         entry: swiftlint --config .swiftlint.yml

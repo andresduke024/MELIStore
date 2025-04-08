@@ -111,6 +111,7 @@ Asegurate de que siempre existan los siguientes archivos en el proyecto:
 ├── .pre-commit-config.yaml
 ├── scripts/
 │   └── pre-push
+│   └── check-xcconfig.sh
 ```
 
 ## ⚠️ Problemas comunes
@@ -119,6 +120,7 @@ Asegurate de que siempre existan los siguientes archivos en el proyecto:
 
     ```bash
     chmod +x scripts/pre-push
+    chmod +x scripts/check-xcconfig.sh
     ```
 
 - **SwiftLint no encuentra el archivo de configuración:**
