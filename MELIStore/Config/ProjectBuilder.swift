@@ -7,11 +7,14 @@
 
 import MELIStoreCore
 import MELIStoreProducts
+import SwiftDependencyInjector
 
 struct ProjectBuilder: Sendable {
     static let shared = ProjectBuilder()
     
     func build() {
+        Injector.global.turnOffLogger(forced: true)
+        
         let modules: [ModuleProtocol] = [
             CoreModule.shared,
             ProductsModule.shared

@@ -7,9 +7,13 @@
 
 import SwiftUI
 import MELIStoreCore
+import MELIStoreProducts
 
 @main
 struct MELIStoreApp: App {
+
+    @StateObject
+    private var router = Router()
     
     init() {
         ProjectBuilder.shared.build()
@@ -17,7 +21,17 @@ struct MELIStoreApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationModule(onNavigateTo: onNavigateTo(_:)) {
+                SplashView()
+            }
+        }
+        .environmentObject(router)
+    }
+    
+    @ViewBuilder
+    private func onNavigateTo(_ route: ModulesRoutes) -> some View {
+        switch route {
+            case .products: ProductsModuleRoute()
         }
     }
 }

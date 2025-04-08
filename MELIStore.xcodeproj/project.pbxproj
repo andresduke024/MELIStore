@@ -34,6 +34,9 @@
 		A330110A2DA1676B00996EA3 /* MELI Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MELI Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33011172DA1676C00996EA3 /* MELIStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELIStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33011212DA1676C00996EA3 /* MELIStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELIStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F9FD832DA2D9A3003959FB /* MELIStoreDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MELIStoreDesignSystem; path = ../MELIStoreDesignSystem; sourceTree = SOURCE_ROOT; };
+		A3FA2E072DA22FC300BB0EF8 /* MELIStoreProducts */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MELIStoreProducts; path = ../MELIStoreProducts; sourceTree = SOURCE_ROOT; };
+		A3FA2E092DA22FD400BB0EF8 /* MELIStoreCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MELIStoreCore; path = ../MELIStoreCore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -103,6 +106,9 @@
 				A330111A2DA1676C00996EA3 /* MELIStoreTests */,
 				A33011242DA1676C00996EA3 /* MELIStoreUITests */,
 				A330110B2DA1676B00996EA3 /* Products */,
+				A3FA2E072DA22FC300BB0EF8 /* MELIStoreProducts */,
+				A3FA2E092DA22FD400BB0EF8 /* MELIStoreCore */,
+				A3F9FD832DA2D9A3003959FB /* MELIStoreDesignSystem */,
 			);
 			sourceTree = "<group>";
 		};
