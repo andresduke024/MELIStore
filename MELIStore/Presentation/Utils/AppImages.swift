@@ -18,5 +18,4 @@ enum AppImages: ImageProtocol {
     }
     
     var bundle: Bundle? { .main }
-    
 }

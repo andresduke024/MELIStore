@@ -15,7 +15,7 @@ struct ProjectBuilder: Sendable {
     func build() {
         Injector.global.turnOffLogger(forced: true)
         
-        let modules: [ModuleProtocol] = [
+        let modules: [BasicModuleProtocol] = [
             CoreModule.shared,
             ProductsModule.shared
         ]

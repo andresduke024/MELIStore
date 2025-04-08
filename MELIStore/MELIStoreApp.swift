@@ -31,7 +31,7 @@ struct MELIStoreApp: App {
     @ViewBuilder
     private func onNavigateTo(_ route: ModulesRoutes) -> some View {
         switch route {
-            case .products: ProductsModuleRoute()
+            case .products: ProductsModule.shared.entryPoint
         }
     }
 }
