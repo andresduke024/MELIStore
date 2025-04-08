@@ -1,12 +1,23 @@
-# MELI Store (Andres Duque)
+# MELIStore
 
-**MELI Store** es una aplicación iOS desarrollada con Xcode que permite buscar productos de forma rápida y eficiente. Su objetivo es ofrecer una experiencia fluida para explorar información detallada sobre distintos productos.
+**MELIStore** es una aplicación iOS desarrollada con Xcode que permite a los usuarios buscar productos de forma rápida y eficiente, ofreciendo una experiencia fluida para explorar información detallada sobre distintos productos.
 
 ## Características
 
-- Búsqueda rápida de productos
-- Interfaz amigable y moderna
-- Arquitectura modular y escalable
+- **Búsqueda Rápida de Productos**: Permite a los usuarios encontrar productos de manera ágil y eficiente.
+- **Interfaz Amigable y Moderna**: Diseñada para ofrecer una experiencia de usuario intuitiva y atractiva.
+- **Arquitectura Modular y Escalable**: Facilita la mantenibilidad y expansión de la aplicación.
+
+## Requisitos del Sistema
+
+- **Plataforma**: iOS 17.0 o superior
+- **Lenguaje**: Swift 6.0 o superior
+- **Dependencias**:
+  - [MELIStoreCore](https://github.com/andresduke024/MELIStoreCore/tree/feature/initial): Proporciona funcionalidades esenciales y modelos de datos.
+  - [MELIStoreProducts](https://github.com/andresduke024/MELIStoreProducts/tree/feature/initial): Gestiona la lógica relacionada con los productos.
+  - [MELIStoreDesignSystem](https://github.com/andresduke024/MELIStoreDesignSystem/tree/feature/initial): Ofrece componentes de interfaz de usuario reutilizables y estilos coherentes.
+  - [Alamofire](https://github.com/Alamofire/Alamofire): Maneja operaciones de red de manera sencilla y eficiente.
+  - [SwiftLint](https://github.com/realm/SwiftLint): Mantiene un estilo de código coherente en Swift.
 
 ## Archivos `.env`
 
