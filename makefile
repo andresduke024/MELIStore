@@ -41,12 +41,14 @@ env:
 	@echo "🔍 Verificando archivos de entorno..."
 	@if [ ! -f .env ]; then \
 		echo "📄 Creando archivo .env desde .env.template"; \
+		touch .env; \
 		cp .env.template .env; \
 	else \
 		echo "✅ Archivo .env ya existe"; \
 	fi
 	@if [ ! -f .env.dev ]; then \
 		echo "📄 Creando archivo .env.dev desde .env.template"; \
+		touch .env.dev; \
 		cp .env.template .env.dev; \
 	else \
 		echo "✅ Archivo .env.dev ya existe"; \
