@@ -1,0 +1,51 @@
+{
+  "originHash" : "551ce74375210766ca8c81ec341ace64b5457b12d0bf996aaf7aee00abef738d",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "melistorecore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/andresduke024/MELIStoreCore",
+      "state" : {
+        "revision" : "6a12286f3793255225adce21b125ba86606a1938",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "melistoredesignsystem",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/andresduke024/MELIStoreDesignSystem",
+      "state" : {
+        "revision" : "c9bf1ef0ddfa02e2a669ee56ecb93144ecd45285",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "melistoreproducts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/andresduke024/MELIStoreProducts",
+      "state" : {
+        "revision" : "45d98e04d952f231fcb72d41dc0c2e023718b08a",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "swift-dependency-injector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/andresduke024/swift-dependency-injector.git",
+      "state" : {
+        "revision" : "c13d93468689ac92ec1ac856ce94d73f242272cb",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
