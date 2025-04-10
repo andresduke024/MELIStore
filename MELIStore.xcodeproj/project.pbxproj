@@ -893,24 +893,24 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/andresduke024/MELIStoreCore";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.1;
 			};
 		};
 		A3FA2DF72DA1BCFD00BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreProducts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/andresduke024/MELIStoreProducts";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.1;
 			};
 		};
 		A3FA2E042DA22F3900BB0EF8 /* XCRemoteSwiftPackageReference "MELIStoreDesignSystem" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/andresduke024/MELIStoreDesignSystem";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
