@@ -1,6 +1,64 @@
 # MELIStore
 
-**MELIStore** es una aplicación iOS desarrollada con Xcode que permite a los usuarios buscar productos de forma rápida y eficiente, ofreciendo una experiencia fluida para explorar información detallada sobre distintos productos.
+**MELIStore** es una aplicación iOS moderna, modular y altamente escalable, diseñada para ofrecer una experiencia fluida en la búsqueda y visualización de productos. Este proyecto está construido siguiendo prácticas avanzadas de arquitectura de software, herramientas de automatización y principios de diseño profesional.
+
+
+
+## 🧱 Arquitectura Modular con SPM
+
+MELIStore adopta una arquitectura modular utilizando **Swift Package Manager (SPM)**, lo que permite una estructura de proyecto limpia, desacoplada y fácil de escalar.
+
+### Paquetes principales:
+
+- **MELIStoreCore**  
+  Contiene todos los comportamientos generales del dominio del negocio. Aquí se encapsulan los modelos, contratos y servicios compartidos por los distintos módulos de la app.
+
+- **MELIStoreDesignSystem**  
+  Centraliza todos los estilos, componentes visuales reutilizables, colores, tipografías y temas de marca. Este paquete permite mantener la coherencia visual en toda la aplicación.
+
+---
+
+## 🔍 Submódulo de Productos
+
+El submódulo `MELIStoreProducts` se encarga de las siguientes funcionalidades clave:
+
+- **Búsqueda de productos**
+- **Visualización de resultados**
+- **Detalle de producto**
+
+Este módulo funciona de manera independiente y desacoplada, consumiendo únicamente dependencias del `Core` y el `DesignSystem`.
+
+---
+
+## 🧹 Principios de diseño aplicados
+
+Cada submódulo está implementado siguiendo los siguientes principios:
+
+- ✅ **Arquitectura limpia** basada en DDD (Domain-Driven Design)
+- ✅ **Diseño atómico de interfaces**
+- ✅ **Inyección de dependencias** mediante [`SwiftDependencyInjector`](https://github.com/andresduke024/SwiftDependencyInjector) (también desarrollado por el autor del proyecto)
+- ✅ **Tests unitarios completos** que garantizan el correcto funcionamiento de cada feature
+
+---
+
+## ⚙️ Automatización y herramientas de desarrollo
+
+El proyecto está equipado con una serie de herramientas y configuraciones que mejoran el flujo de trabajo del desarrollo:
+
+- **Git hooks** automatizados con `pre-commit`
+- **Linting automático** con `SwiftLint`
+- **Archivos `.env`** para manejar configuraciones sensibles por entorno
+- **Schemas de compilación personalizados**
+- **Inicialización del proyecto con `make`**  
+  El archivo `Makefile` ya está preparado para ejecutar comandos como:
+
+  ```bash
+  make setup
+  make test
+  make lint
+  ```
+
+---
 
 ## Características
 
@@ -144,3 +202,13 @@ El hook de pre-push cancela el push si falla un test o hay errores de lint. Corr
 Este setup fue diseñado para automatizar al máximo el flujo de trabajo de este proyecto. Pensado especialmente para mantener consistencia, calidad y productividad desde el primer make.
 
 Desarrollado por **Andrés Duque**.
+
+## 🖼️ Atribuciones de ilustraciones
+
+Las ilustraciones utilizadas en este proyecto son proporcionadas por [Storyset](https://storyset.com):
+
+- <a href="https://storyset.com/media">Media illustrations by Storyset</a>  
+- <a href="https://storyset.com/online">Online illustrations by Storyset</a>  
+- <a href="https://storyset.com/web">Web illustrations by Storyset</a>  
+- <a href="https://storyset.com/internet">Internet illustrations by Storyset</a>  
+
