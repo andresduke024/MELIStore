@@ -18,11 +18,6 @@ jobs:
       - name: Select Xcode version
         run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
-      - name: Copy .env files
-        run: |
-          cp .env.template .env
-          cp .env.template .env.dev
-
       - name: Set up project environment
         run: make setup
 
